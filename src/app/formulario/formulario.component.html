@@ -1,0 +1,14 @@
+<main>
+  <form [formGroup]="formularioNumero" (ngSubmit)="onSubmit(formularioNumero.value)">
+    <fieldset>
+      <legend>Serie Numérica</legend>
+      <label for="numerpN">Ingrese su número</label>
+      <input type="number" min="0" formControlName="numero" id="numeroN">
+      <button class="button" type="submit">Enviar</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <app-resultado [serieN]="serieN" [fibonacci]="fibonacci" [primo]="primo" [triangular]="triangular"></app-resultado>
+</main>

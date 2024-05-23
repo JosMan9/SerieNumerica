@@ -1,0 +1,26 @@
+@import '../../variables';
+
+
+.resultados-container {
+  background-color: $result-bg-color;
+  padding: $result-padding;
+  border-radius: $result-border-radius;
+  max-width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    color: $result-header-color;
+    font-size: $result-header-font-size;
+    margin-bottom: $result-margin-bottom;
+  }
+
+  h3 {
+    color: $result-subheader-color;
+    font-size: $result-subheader-font-size;
+    margin-bottom: $result-margin-bottom;
+
+    b {
+      font-weight: $result-font-weight;
+    }
+  }
+}
